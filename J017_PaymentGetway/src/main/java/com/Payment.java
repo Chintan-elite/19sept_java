@@ -23,7 +23,7 @@ public class Payment extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		int amt = Integer.parseInt(request.getParameter("amt"));
-		System.out.println(amt);
+		
 		try {
 			  JSONObject orderRequest = new JSONObject();
 			  orderRequest.put("amount", amt); // amount in the smallest currency unit
