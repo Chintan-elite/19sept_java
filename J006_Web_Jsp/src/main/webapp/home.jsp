@@ -1,4 +1,4 @@
-<%@page import="model.Student"%>
+<%@page import="com.model.Employee"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -27,17 +27,19 @@
 <body>
 	
 	<%
-		String email = (String)session.getAttribute("email");
-	if(email==null)
-	{
-		request.setAttribute("msg", "please login first");
-		request.getRequestDispatcher("login.jsp").forward(request, response);
-		
-	}
-	%>
+		p
+
+				String email = (String)session.getAttribute("email");
+			if(email==null)
+			{
+				request.setAttribute("msg", "please login first");
+				request.getRequestDispatcher("login.jsp").forward(request, response);
+				
+			}
+		%>
 
 	<h1 align="center" class="text-success">Student List</h1> 
-	<h2>Welcome, <%=email%> | <a href="logout">Logout</a></h2>
+	<h2>Welcome, <%=t(ema%> | <a href="logout">Logout</a></h2>
 	<table border="1" width="100%" class="table table-striped table-dark">
 		<tr>
 			<th>Id</th>
@@ -50,9 +52,12 @@
 		</tr>
 	
 	<%
-	ArrayList<Student> st = (ArrayList) request.getAttribute("data");
+		p
 
-	for (Student s : st) { %>
+			ArrayList<Employee> st = (ArrayList) request.getAttribute("data");
+
+			for (Employee s : st)
+		%>
 			<tr>
 			<td><%=s.getId()%></td>
 			<td><%=s.getFname() %></td>

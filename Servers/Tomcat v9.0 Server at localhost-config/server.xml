@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="J016_FileUploading" path="/J016_FileUploading" reloadable="true" source="org.eclipse.jst.jee.server:J016_FileUploading"/><Context docBase="J017_PaymentGetway" path="/J017_PaymentGetway" reloadable="true" source="org.eclipse.jst.jee.server:J017_PaymentGetway"/><Context docBase="J020_hibernateWeb" path="/J020_hibernateWeb" reloadable="true" source="org.eclipse.jst.j2ee.server:J020_hibernateWeb"/><Context docBase="J021_Hibenateweb" path="/J021_Hibenateweb" reloadable="true" source="org.eclipse.jst.j2ee.server:J021_Hibenateweb"/></Host>
+      <Context docBase="J016_FileUploading" path="/J016_FileUploading" reloadable="true" source="org.eclipse.jst.jee.server:J016_FileUploading"/><Context docBase="J017_PaymentGetway" path="/J017_PaymentGetway" reloadable="true" source="org.eclipse.jst.jee.server:J017_PaymentGetway"/><Context docBase="J020_hibernateWeb" path="/J020_hibernateWeb" reloadable="true" source="org.eclipse.jst.j2ee.server:J020_hibernateWeb"/><Context docBase="J021_Hibenateweb" path="/J021_Hibenateweb" reloadable="true" source="org.eclipse.jst.j2ee.server:J021_Hibenateweb"/><Context docBase="J027_springMVC" path="/J027_springMVC" reloadable="true" source="org.eclipse.jst.j2ee.server:J027_springMVC"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,39 +1,38 @@
 package main;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import model.Country;
-import model.State;
+import model.Student;
+import model.Subject;
 
 
-public class DeleteData {
+public class Deletedata {
 	public static void main(String[] args) {
 		
 		
 		SessionFactory sf = new Configuration()
 							.configure("hibernate.cfg.xml")
-							.addAnnotatedClass(Country.class)
-							.addAnnotatedClass(State.class)
+							.addAnnotatedClass(Subject.class)
+							.addAnnotatedClass(Student.class)
 							.buildSessionFactory();
 		
 		Session session = sf.openSession();
 		Transaction tx = session.beginTransaction();
 		
-		Country c1 = session.load(Country.class, 4);
-		
-		session.delete(c1);
+
 	
 		
+		Subject s = session.load(Subject.class, 3);
 		
-		
-		
-		
+		session.delete(s);
 		
 		tx.commit();
-		
+
 		
 		
 		
