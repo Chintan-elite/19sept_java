@@ -1,4 +1,4 @@
-<%@page import="com.model.Employee"%>
+<%@page import="com.example.demo.model.Employee"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>

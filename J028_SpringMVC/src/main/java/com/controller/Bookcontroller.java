@@ -34,7 +34,7 @@ public class Bookcontroller {
 	public String addBook(@Valid @ModelAttribute("book") Book b, BindingResult result)
 	{
 		//ModelAndView model = new ModelAndView();
-		if(result.hasErrors())
+		if(result.hasFieldErrors())
 		{
 			
 			return "index";
